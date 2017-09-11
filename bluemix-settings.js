@@ -51,7 +51,7 @@ var settings = module.exports = {
     httpAdminRoot: '/red',
 
     // Serve up the welcome page
-    httpStatic: path.join(__dirname,"public"),
+    httpStatic: path.join(__dirname,"www"),
 
     functionGlobalContext: { },
 
