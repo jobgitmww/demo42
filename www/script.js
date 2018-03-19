@@ -41,10 +41,10 @@
                 $('.messages').append($message);
                 if (_this.message_side === "left") {
                 	document.getElementById("feedback_like").style.visibility="visible";
-                 	document.getElementById("feedback_silike").style.visibility="visible";
+                 	document.getElementById("feedback_dislike").style.visibility="visible";
                 } 	else {
                  		document.getElementById("feedback_like").style.visibility="hidden";
-                 		document.getElementById("feedback_silike").style.visibility="hidden";
+                 		document.getElementById("feedback_dislike").style.visibility="hidden";
                  	}
                 return setTimeout(function () {
                     return $message.addClass('appeared');
