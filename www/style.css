@@ -372,3 +372,9 @@ body {
   right: 10px;
   font-size: 0.9em;
 }
+
+.feedback {
+  position: absolute;
+  height: 25px;
+  left: 10px;
+}
