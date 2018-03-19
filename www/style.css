@@ -103,7 +103,7 @@ body {
 }
 
 .messages .message.left .avatar:before {
-  content: 'You';
+  content: 'Bot';
   color: RGBA(255, 255, 255, 0.70);
   display: flex;
   justify-content: center;
@@ -134,7 +134,7 @@ body {
 }
 
 .messages .message.right .avatar:before {
-  content: 'Bot';
+  content: 'You';
   color: RGBA(255, 255, 255, 0.70);
   display: flex;
   justify-content: center;
@@ -375,12 +375,16 @@ body {
 
 .feedback_like {
   position: absolute;
-  height: 20px;
-  left: 20px;
+  height: 19px;
+  left: 10px;
+  visibility: hidden;
+  cursor: pointer;
 }
 
 .feedback_dislike {
   position: absolute;
-  height: 20px;
-  left: 50px;
+  height: 19px;
+  left: 30px;
+  visibility: hidden;
+  cursor: pointer;
 }

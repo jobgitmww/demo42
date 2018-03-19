@@ -39,6 +39,14 @@
                 $message.addClass(_this.message_side).find('.text').html(_this.text);
                 _this.intent ? $message.addClass(_this.message_side).find('.intent').html('#'+_this.intent):false;
                 $('.messages').append($message);
+                if (_this.message_side === 'left') {
+                	document.getElementById("feedback_like").style.visibility="visible";
+                 	document.getElementById("feedback_silike").style.visibility="visible";
+                 	else {
+                 		document.getElementById("feedback_like").style.visibility="hidden";
+                 		document.getElementById("feedback_silike").style.visibility="hidden";
+                 	}
+                }
                 return setTimeout(function () {
                     return $message.addClass('appeared');
                 }, 0);
