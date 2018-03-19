@@ -377,7 +377,6 @@ body {
   position: absolute;
   height: 19px;
   left: 10px;
-  visibility: hidden;
   cursor: pointer;
 }
 
@@ -385,6 +384,5 @@ body {
   position: absolute;
   height: 19px;
   left: 30px;
-  visibility: hidden;
   cursor: pointer;
 }
