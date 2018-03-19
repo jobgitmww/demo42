@@ -103,7 +103,7 @@ body {
 }
 
 .messages .message.left .avatar:before {
-  content: 'W';
+  content: 'You';
   color: RGBA(255, 255, 255, 0.70);
   display: flex;
   justify-content: center;
@@ -134,7 +134,7 @@ body {
 }
 
 .messages .message.right .avatar:before {
-  content: 'K';
+  content: 'Bot';
   color: RGBA(255, 255, 255, 0.70);
   display: flex;
   justify-content: center;
@@ -373,8 +373,14 @@ body {
   font-size: 0.9em;
 }
 
-.feedback {
+.feedback_like {
   position: absolute;
-  height: 25px;
-  left: 10px;
+  height: 20px;
+  left: 20px;
+}
+
+.feedback_dislike {
+  position: absolute;
+  height: 20px;
+  left: 50px;
 }
