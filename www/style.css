@@ -378,11 +378,13 @@ body {
   height: 19px;
   left: 10px;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .feedback_dislike {
   position: absolute;
   height: 19px;
-  left: 10px;
+  left: 20px;
   cursor: pointer;
+  visibility: hidden;
 }
