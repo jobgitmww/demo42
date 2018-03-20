@@ -39,6 +39,10 @@
                 $message.addClass(_this.message_side).find('.text').html(_this.text);
                 _this.intent ? $message.addClass(_this.message_side).find('.intent').html('#'+_this.intent):false;
                 $('.messages').append($message);
+
+console.log(_this.message_side);
+console.log($message);
+
                 if (_this.message_side === "left") {
                 	document.getElementById("feedback_like").style.visibility="visible";
                  	document.getElementById("feedback_dislike").style.visibility="visible";
