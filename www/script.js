@@ -35,21 +35,14 @@
         this.draw = function (_this) {
             return function () {
                 var $message;
-                $message = $($('.message_template').clone().html());
+                if (_this.message_side == "left"){
+   	                $message = $($('.message_template_feedback').clone().html());
+                }	else {
+	                $message = $($('.message_template').clone().html());
+                }
                 $message.addClass(_this.message_side).find('.text').html(_this.text);
                 _this.intent ? $message.addClass(_this.message_side).find('.intent').html('#'+_this.intent):false;
                 $('.messages').append($message);
-
-console.log(_this.message_side);
-console.log($message);
-
-                if (_this.message_side === "left") {
-                	document.getElementById("feedback_like").style.visibility="visible";
-                 	document.getElementById("feedback_dislike").style.visibility="visible";
-                } 	else {
-                 		document.getElementById("feedback_like").style.visibility="hidden";
-                 		document.getElementById("feedback_dislike").style.visibility="hidden";
-                 	}
                 return setTimeout(function () {
                     return $message.addClass('appeared');
                 }, 0);
