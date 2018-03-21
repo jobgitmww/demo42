@@ -239,7 +239,6 @@ function feedback_like() {
        dataType: 'json',
        success:function(data){
            context = data.context;
-           addMessage(data.output.text, 'left', data.intents[0].intent);
        },
        error:function(XMLHttpRequest,status,error){
            //do nothing
