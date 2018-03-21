@@ -1,3 +1,5 @@
+var chatcontext;
+
 (function () {
 	
 	window.onload = function () {
@@ -84,6 +86,7 @@
                     window.speechSynthesis.speak(msg);
                 }
                 console.info(data);
+                chatcontext = data;
                 if(data.intents[0] != null){
                     addMessage(data.output.text, 'left', data.intents[0].intent);
                 } else {
@@ -231,7 +234,7 @@ function feedback_like() {
     $.ajax( {
        url: '/feedback_like',
        type: 'POST',
-       data: {'feedback': "like" , 'context': context},
+       data: {'feedback': "like" , 'context': chatcontext},
        ContentType: 'application/json; charset=utf-8',
        dataType: 'json',
        success:function(data){
