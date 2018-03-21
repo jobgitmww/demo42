@@ -300,6 +300,10 @@ body {
   display: none;
 }
 
+.message_template_feedback {
+  display: none;
+}
+
 #template_anchor {
   display: flex;
   position: absolute;
@@ -378,7 +382,6 @@ body {
   height: 18px;
   left: 20px;
   cursor: pointer;
-  visibility: hidden;
 }
 
 .feedbackbutton {
