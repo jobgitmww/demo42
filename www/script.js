@@ -36,9 +36,9 @@
             return function () {
                 var $message;
                 if (_this.message_side == "left"){
-                	if (localStorage.getItem('feedback') == 0) {
+                	if (localStorage.getItem('feedback_on') == 0) {
                 		$message = $($('.message_template').clone().html());
-                		localStorage.setItem('feedback', 1);
+                		localStorage.setItem('feedback_on', 1);
                 	} else {
    	                	$message = $($('.message_template_feedback').clone().html());
    	                }

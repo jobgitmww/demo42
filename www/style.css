@@ -377,6 +377,7 @@ body {
   position: absolute;
   height: 18px;
   left: 20px;
+  cursor: pointer;
 }
 
 .feedbackbutton {
