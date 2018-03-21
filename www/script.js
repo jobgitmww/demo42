@@ -223,10 +223,6 @@
     }) => `<div onclick="chatbuttonClicked('${value || label}')" class="chatbutton" value="${value || label}">${label || value}</div>`;
 
 
-
-}.call(this));
-
-
 	function feedback_like() {
 		console.log("feedback like function reached");
         $.ajax( {
@@ -248,3 +244,6 @@
 	function feedback_dislike() {
 		
 	}
+
+}.call(this));
+
