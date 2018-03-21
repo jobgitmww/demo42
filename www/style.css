@@ -373,16 +373,12 @@ body {
   font-size: 0.9em;
 }
 
-.feedback_like {
+.feedback {
   position: absolute;
   height: 19px;
   left: 10px;
-  cursor: pointer;
 }
 
-.feedback_dislike {
-  position: absolute;
+.feedbackbutton {
   height: 19px;
-  left: 20px;
-  cursor: pointer;
 }
