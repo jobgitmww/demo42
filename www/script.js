@@ -223,27 +223,27 @@
     }) => `<div onclick="chatbuttonClicked('${value || label}')" class="chatbutton" value="${value || label}">${label || value}</div>`;
 
 
-	function feedback_like() {
-		console.log("feedback like function reached");
-        $.ajax( {
-            url: '/feedback_like',
-            type: 'POST',
-            data: {'message': text , 'context': context},
-            ContentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            success:function(data){
-                context = data.context;
-                addMessage(data.output.text, 'left', data.intents[0].intent);
-            },
-            error:function(XMLHttpRequest,status,error){
-                //do nothing
-            }
-        })
-	}
-
-	function feedback_dislike() {
-		
-	}
-
 }.call(this));
 
+
+function feedback_like() {
+	console.log("feedback like function reached");
+    $.ajax( {
+       url: '/feedback_like',
+       type: 'POST',
+       data: {'feedback': "like" , 'context': context},
+       ContentType: 'application/json; charset=utf-8',
+       dataType: 'json',
+       success:function(data){
+           context = data.context;
+           addMessage(data.output.text, 'left', data.intents[0].intent);
+       },
+       error:function(XMLHttpRequest,status,error){
+           //do nothing
+        }
+    })
+}
+
+function feedback_dislike() {
+		
+}
