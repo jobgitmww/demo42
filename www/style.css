@@ -375,10 +375,11 @@ body {
 
 .feedback {
   position: absolute;
-  height: 19px;
-  left: 10px;
+  height: 18px;
+  left: 20px;
 }
 
 .feedbackbutton {
-  height: 19px;
+  height: 16px;
+  width: 16px;
 }

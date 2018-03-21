@@ -224,6 +224,7 @@
 
 
 	function feedback_like() {
+		console.log("feedback like function reached");
         $.ajax( {
             url: '/feedback_like',
             type: 'POST',
